@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FitnessAppCoursework.SignIn"
+             Shell.NavBarIsVisible="False"
+             Title="SignIn">
+    <Grid RowDefinitions="1*,7*,1*">
+        <Frame BackgroundColor="#03045e" Grid.Row="0" HorizontalOptions="EndAndExpand" BorderColor="Transparent"
+               Padding="0" Margin="0,-80,-80,0" HeightRequest="250" WidthRequest="250" CornerRadius="125">
+            
+        </Frame>
+        <Frame BackgroundColor="#0077b6" Grid.Row="0" HorizontalOptions="EndAndExpand" BorderColor="Transparent"
+               Padding="0" Margin="0,-120,-120,0" HeightRequest="250" WidthRequest="250" CornerRadius="125">
+
+        </Frame>
+        <Frame BackgroundColor="#CAF0F8" Grid.Row="1" VerticalOptions="CenterAndExpand" Margin="0,0,40,0" CornerRadius="0" Grid.ColumnSpan="2">
+            <VerticalStackLayout Spacing="25">
+                <Label Text="Sign In" FontSize="28" TextColor="#03045e"/>
+                <Frame Padding="10" CornerRadius="0">
+                    <Grid ColumnDefinitions="25,*" ColumnSpacing="10">
+                        <Image Source="at.png" HeightRequest="25" WidthRequest="25"/>
+                        <Entry VerticalOptions="Center" Placeholder="Email" PlaceholderColor="#0077b6" Grid.Column="1"/>
+                    </Grid>
+                </Frame>
+                <Frame Padding="10" CornerRadius="0">
+                    <Grid ColumnDefinitions="25,*" ColumnSpacing="10" >
+                        <Image Source="lock.png" HeightRequest="25" WidthRequest="25" VerticalOptions="Center"/>
+                        <Entry VerticalOptions="Center" Placeholder="Password" IsPassword="True" PlaceholderColor="#0077b6" Grid.Column="1"/>
+                    </Grid>
+                </Frame>
+
+                <Button Text="Sign in" BackgroundColor="#03045e" CornerRadius="0" HeightRequest="60"/>
+                <Label Text="Forgot Password?" TextColor="#404040" HorizontalTextAlignment="Center"/>
+                <HorizontalStackLayout Spacing="25">
+                    <Label Text="Don't have an account?" HorizontalTextAlignment="Center"/>
+                    <Label Text="Sign up"  TextColor="#0077b6"/>
+                </HorizontalStackLayout>
+            </VerticalStackLayout>
+        </Frame>
+
+        <Frame BackgroundColor="#0077b6" Grid.Row="2" HorizontalOptions="StartAndExpand" BorderColor="Transparent"
+               Padding="0" Margin="0,0,0,-180" HeightRequest="250" WidthRequest="250" CornerRadius="125">
+
+        </Frame>
+        <Frame BackgroundColor="#03045e" Grid.Row="2" HorizontalOptions="StartAndExpand" BorderColor="Transparent"
+               Padding="0" Margin="0,0,0,-200" HeightRequest="250" WidthRequest="250" CornerRadius="125">
+
+        </Frame>
+    </Grid>
+</ContentPage>
